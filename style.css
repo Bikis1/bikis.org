@@ -45,8 +45,8 @@ ul li.active a
 .logo img
 {
 	float:left;
-	width: 70px;
-	height:110px;
+	width: 150px;
+	height:auto;
 }
 .main
 {
