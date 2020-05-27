@@ -22,7 +22,7 @@
 
 body
 {
-	background-image: url("gray-background.jpg");
+	background-image: url("drone-background.jpg");
 	background-size:cover;
 }
 
@@ -73,6 +73,7 @@ body
 	bottom:0;
 	position:absolute;
 	background: linear-gradient(to right, #db1bf6, #19d7f8);
+	border-radius:10px 20px 20px 1px;
 }
 
 .quick-links ul
