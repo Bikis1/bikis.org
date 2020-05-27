@@ -6,7 +6,7 @@
 	font-family: sans-serif;
 }
 
-.container
+body, html
 {
 	width: 100%;
 	height: 100%;
@@ -23,8 +23,12 @@
 body
 {
 	background-image: url("drone-background.jpg");
-	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 }
+
 
 .menu ul li
 {
