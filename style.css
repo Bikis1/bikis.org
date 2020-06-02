@@ -163,3 +163,20 @@ body
 	background-color: #fff;
 	color:#000;
 }
+
+@media screen and (max-width: 959px)
+{
+	body
+	{
+		width:100%;
+	}
+	.conatiner, .title
+	{
+		display: block;
+	}
+	
+	img
+	{
+		width: 100%;
+	}
+}
