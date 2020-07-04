@@ -1,3 +1,3 @@
-#https://bikis.org
+https://bikis.org
 
-Online Tutorial On Construction
+Online Tutorial
