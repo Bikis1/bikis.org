@@ -38,6 +38,23 @@ p, li{
   font-weight: 400; 
   font-size: 16px;
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-left: thick rgb(10, 50, 59) solid;
+}
+.image
+{
+  width: 100%;
+}
+.fig
+{
+  display:flex;
+  border: thin rgb(10, 50, 59) solid;
+
+}
 #main-doc header {
   text-align: left;
   margin: 0px;
