@@ -14,16 +14,16 @@
     <ul>
     <li><a class="nav-link" href="#Introduction">Introduction</a></li>
     <li>
-    <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+    <a class="nav-link" href="#Algorithm">Algorithm</a>
     </li>
     <li>
-    <a class="nav-link" href="#JavaScript_and_Java">Sample and Samle</a>
+    <a class="nav-link" href="#Hello_world">Hello World</a>
     </li>
-    <li><a class="nav-link" href="#Hello_world">Sample and Samle</a></li>
-    <li><a class="nav-link" href="#Variables">Sample and Samle</a></li>
+    <li><a class="nav-link" href="#Variable">Variable</a></li>
+    <li><a class="nav-link" href="#Declaring_variables">Declaring Variable</a></li>
     <li>
-    <li><a class="nav-link" href="#Hello_world">Sample and Samle</a></li>
-    <li><a class="nav-link" href="#Variables">Sample and Samle</a></li>
+    <li><a class="nav-link" href="#Constants">Constants</a></li>
+    <li><a class="nav-link" href="#Operators">Operators</a></li>
     <li>
     <li><a class="nav-link" href="#Hello_world">Sample and Samle</a></li>
     <li><a class="nav-link" href="#Variables">Sample and Samle</a></li>
@@ -65,6 +65,11 @@
       <p><strong>Programming Language:</strong>consists of all rules and symbols that allow humans to communicate with computers. </p>
       <p><strong>Computer Programming:</strong>is the designing and implementation of a computer program. </p>
     </p>
+    </article>
+    </section>
+
+    <section class="main-section" id="Algorithm">
+    <article>
     <header>Algorithm</header>
     <p>A tool to solve a problem</p>
     <p><strong>Algorithm:</strong> is a finite sequence of instruction to solve a problem.</p>
@@ -236,14 +241,15 @@
     <code> g++ -std=c++11 your_file.cpp -o your_program </code>
     </article>
     </section>
-    <section class="main-section" id="Variables">
+    <section class="main-section" id="Variable">
     <header>Variables</header>
+    <article>
     <p>
       A variable is a container or portion of memory for storing and retrieving data value. A variable in c++ is a memory address. It is a digital container to hold a value.
        This value may be integer number, floating-point number,  character,  string, or boolean.
     </p>
     <p>
-    <strong>Datatype: </strong>determine the type of data will be stored in a avriable. 
+    <strong>Datatype: </strong>determine the type of data will be stored in a avriable.   </p>
     <dl>
       <dt>Types of datatypes</dt>
       <dd>Int -  for integer</dd>
@@ -252,7 +258,7 @@
       <dd>Double- for floating-point number</dd>
       <dd>Bool - for boolean (true/false)</dd>
     </dl>
-    </p>
+  
     <p>
     <strong>Identifier: </strong>is the name of a variable. It is a sequence of one or more letters, digits, and underscore characters.
      An identifier can not start with numbers and it can not be keywords. 
@@ -260,28 +266,41 @@
     <p>
       <strong>Keyword: </strong> are special words that are assigned for certain tasks. They can be declared as variables.  
     </p>
-      
+    <dl>
+      <dt><strong>Example</strong></dt>
+      <dd>New</dd>
+      <dd>return</dd>
+      <dd>if</dd>
+      <dd>else</dd>
+      <dd>public</dd>
+      <dd>continue</dd>
+    </dl>
+  </article>
     </section>
+
     <section class="main-section" id="Declaring_variables">
     <header>Declaring variables</header>
     <article>
-    You can declare a variable in two ways:
-    <p>
-    With the keyword . For example, <code>var x = 42.</code> This syntax
-    can be used to declare both local and global variables.
+      Here is the simplest way to declare a variable. 
+      <img src="./img/variable-declaration.png" alt="variable declaration">
+  
+    <p> We can declare a variable and assigne a value. For example, <code> float x; <br> x = 1.25;</code> These two lines of 
+      code create a memory location called x for a decimal number and stores a value of 1.25.
     </p>
     <p>
-    By simply assigning it a value. For example, <code>x = 42.</code> This
-    always declares a global variable. It generates a strict JavaScript
-    warning. You shouldn't use this variant.
+    We can declare a variable With the keyword auto. For example,<code>auto y = 13.</code> The compiler decides the data type 
+    during the execution of the program.
     </p>
-    <p>
-    With the keyword let. For example,<code> let y = 13.</code> This syntax
-    can be used to declare a block scope local variable. See Variable scope
-    below.
-    </p>
-    </article>
+    <code>auto a = 112; //integer <br>auto b = 12.5 //double <br>auto c = true; //boolean <br>auto d = "hello"; //string</code>
+    <p><strong>Example: </strong>Multiple of two numbers</p>
+    <code>#incude < iostream.h > <br> int main() <br>{<br>int num1 = 5;<br>int num2 = 6;<br>cout << "Multiple: "<< num1*num2; <br> return 0; <br> } </code>
+    <p><strong>Signed and Undigned Variable: </strong> used to explicitly tell the compilor to declare negative or positive value. By defaut, a variable is positive.</p>
+  <code>signed int number = 5;</code>
+  </article>
     </section>
+
+
+<!-- 
     <section class="main-section" id="Variable_scope">
     <header>Variable scope</header>
     <article>
@@ -318,43 +337,143 @@
     est dolorum sint vel cupiditate sed. Similique animi placeat amet?
     </p>
     </article>
-    </section>
+    </section> -->
+
+
+
+
+
     <section class="main-section" id="Constants">
     <header>Constants</header>
     <article>
     <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit eius 
-    harum voluptatibus iste! Id maiores, maxime excepturi tempore quisquam, 
-    sint corporis recusandae ex aut omnis saepe exercitationem sequi tenetur reiciendis.
-    </p>
+    Variable diclared as constant can not be changed after declared. We ned to assign a value during declaration.
     <code>const PI = 3.14;</code>
+    <strong>Example: Area of a circle</strong>
+    </p>
+    <code>#icndue < iostream.h > <br> void main() <br> { <br>   float r; <br>   const float PI = 3.1415; <br>   float Area; <br>   cout<<"Enter radius of a circle"<< endl; <br>   cin>>r; <br>   Area = PI*r*r <br>   cout<<"The area is " << Area<< endl; <br> } </code>
     <p>
     A constant cannot change value through assignment or be re-declared
-    while the script is running. It has to be initialized to a value.
+    while the code is running. It has to be initialized to a value.
     </p>
-    <p>
-    The scope rules for constants are the same as those for let block scope
-    variables. If the const keyword is omitted, the identifier is assumed to
-    represent a variable.
-    </p>
-    <p>
-    You cannot declare a constant with the same name as a function or
-    variable in the same scope. For example:
-    </p>
-    <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-    CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-    }</code>
-    However, object attributes are not protected, so the following statement
-    is executed without problems.
-    <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
     </article>
     </section>
-    <section class="main-section" id="Data_types">
-    <h1>Data types</h1>
+
+
+
+    <section class="main-section" id="Operators">
+    <h1>Operators</h1>
     <article>
-    <p>The latest ECMAScript standard defines seven data types:</p>
+    <p>Symbols that is used to perform specific operations. <br> Types of Operator: </p>
+    <ol>
+      <li>Arithmetic Operator</li>
+      <li>Relational Operator</li>
+      <li>Logical Operator</li>
+      <li>Assignment Operator</li>
+      <li>Conditional Operator</li>
+      <li>Increment/Decrement Operator</li>
+      <li>Bitwise Operator</li>
+    </ol>
+      <p><strong>1. Arithmetic Operator</strong></p>
+      <ul>
+        <li>There are five arithmetic symbols. Those are +, -, *, /, % (modulus). </li>
+        <li>+ and - have equal precedence.</li>
+        <li>*, /, and % have equal precedence.</li>
+        <li>When they have equal precedence, c++ works from left to right.</li>
+      </ul>
+    <p><strong>Example</strong></p>
+    <code>8 % 6 * 3 + 4 - 7 <br> 8 % 6 = 2 (reminder) <br> 2 * 3 = 6 <br> 4 - 7 = -3 <br> 6  + (-3) = 3</code>
+    <p><strong>2. Relational Operator</strong></p>
     <ul>
-    <li>
+      <li>Only have boolean value.</li>
+      <li> >(greater than), >=(greater  than or equal to)</li>
+      <li><(less than), <=(less than or equal to), =(Assignment Operator), ==(Equality Operator), !=(not equal)</li>
+    </ul>
+  <p><strong>Example</strong></p>
+  <code>a = 2, b = 3, and c = 6  <br>( a == 5 ) // evaluates as flase<br>(a * b >=c ) evaluates as true<br>( b + 4 > a*c) evaluates as false<br>((b = 2) ==a) evaluates as true</code>
+
+  <p><strong>3. Logical Operator</strong></p>
+  <ul>
+    <li>Logical and (&&) </li>
+    <li>Logical or (||) </li>
+    <li>Logical not (!) </li>
+  </ul>
+<p><strong>Example</strong></p>
+<table style="width:100%">
+  <tr>
+    <th>p</th>
+    <th>q</th>
+    <th>&&</th>
+    <th>||</th> 
+    <th>!P</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+  </tr>
+</table>
+
+
+<p><strong>4. Assignment Operator</strong> <br> There are three ways of using an assignment operator. </p>
+<ol>
+  <li>Simple assignment: </li>
+  <code>int a =5;</code>
+  <li>Multiple assignment: </li>
+  <code>double b = c = d = s =10; </code>
+  <li>Compound assignment:</li>
+  <code>float a = 6.8, b = 23.4; <br> a = a +1; is the same as a+=1 <br> b = b-2;  is the same as b -=2; </code>
+</ol>
+<p><strong>Example 1: </strong></p>
+<code> #include < iostream.h > <br> void main() <br> { <br> int a, b; <br> a = 4; <br> b =3; <br> a = b; <br> b = 7; <br> cout<< "a: " << a << endl; <br> cout <<"b: "<< b << endl; <br>}</code>
+<p><strong>Example 2: </strong></p>
+<code> #include < iostream.h > <br> void main() <br> { <br> int a, b; <br> b = 4;  <br> a = b; <br> a += 7; <br> cout<< "a: " << a << endl; <br>}</code>
+
+<p><strong>5. Conditional Operator</strong></p>
+<ul>
+  <li>It evaluates the first statement if a condition turns out to be true.</li>
+  <li>Syntax: condition? expression1: expression2;</li>
+  <li>If the condition is true expression1 will be executed. If not, expression2 will be excuted.</li>
+</ul>
+<p><strong>Example</strong></p>
+<code> #include < iostream.h > <br> void main() <br> { <br> int a, b, c; <br> a = 2; <br> b = 4;  <br> c = a>b? a: b; <br> cout<< "c: " << c << endl; <br>}</code>
+
+
+<p><strong>6. Increment/Decrement Operator</strong></p>
+<ul>
+  <li>Increment: adding 1 to a variable.</li>
+  <li>Decrement: subtract 1 from a variable.</li>
+  <li>Only works on integer variable</li>
+</ul>
+
+<p><strong>Example</strong></p>
+<code>8 % 6 * 3 + 4 - 7 <br> 8 % 6 = 2 (reminder) <br> 2 * 3 = 6 <br> 4 - 7 = -3 <br> 6  + (-3) = 3</code>
+
+
+
     <p>Six data types that are primitives:</p>
     <ul>
     <li>Boolean. true and false.</li>

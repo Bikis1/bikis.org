@@ -92,6 +92,14 @@ section article {
   font-size: 0.96em;
 }
 
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: #f7f7f7;
+}
+
 section li {
   margin: 15px 0px 0px 20px;
 }
