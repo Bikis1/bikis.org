@@ -134,21 +134,46 @@
   
   <p><strong>Example 2:</strong> Display all the positive integers a multiple of three</p>
   <img class="image" src="./img/flowchart4.png" alt="a multiple of 3">
-  <ul> <li>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, cumque, ipsam accusantium quos beatae iste eos architecto obcaecati
-     neque unde consequuntur blanditiis aperiam laudantium adipisci 
-     quibusdam magnam reiciendis alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero consequatur, quisquam voluptas laboriosam
-      quos quia corporis beatae eius cum sit voluptates praesentium totam culpa aliquam hic asperiores eos vel?
+  
+    <h1>Chapter One</h1>
+    <h1>Basic Structure of C++</h1>
+      <ul> 
+      <li>
+        C++ is the most popular programming language to develop applications and games. It is an object-oriented language. 
+        To write code, we need an editor and compiler. We can edit and compile our c++ 
+        code using visual studio code(my favorite editor). Though, there is a lot of c++ IDE (Integrated Development Environment) out there. 
+        To explore more, click <a href="https://hackr.io/blog/cpp-ide"> here. </a>
+      </li>
+      <li>
+        <p><strong>Example:</strong>C++ Program</p>
+      <img src="./img/flowchart5.png" alt="first c++ program">
     </li>
     <li>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dignissimos ab consequuntur ex qui adipisci totam,
-     laboriosam neque eligendi eos provident cum esse quod. Temporibus fuga dolorem qui illum amet!
-     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo soluta consequatur voluptas molestiae ipsam cumque id cupiditate aut saepe obcaecati? 
-     Ullam maxime numquam reprehenderit error consequatur libero expedita nemo? Consequatur!
+      <p><strong>Comment:</strong> This is for human and it is completly ignored by the compilor.</p>
+      <dl>
+        <dt>Two types of comments</dt>
+        <dd>1. Single line comment (//for single line)</dd>
+        <dd>2. Multiple line comment (/*  for multiple lines */)</dd>
+      </dl>
+    </li>
+    <li>
+      <p><strong>Preprocessor Directive (library):</strong> it tells the compilor to include input and output.</p>
+      <dl>
+        <dt>Two types</dt>
+        <dd>1. cin - input</dd>
+        <dd>2. cout -output</dd>
+      </dl>
+    </li>
+    <li>
+      <p><strong>Function:</strong> a block of code to accomplish a task.</p>
+      <code> function a() <br>{ <br>   do some thing; <br>   return value; <br> }</code>
     </li>
     </ul>
     </article>
     </section>
+
+
+<!--     
     <section class="main-section" id="What_you_should_already_know">
     <header>What you should already know</header>
     <article>
@@ -164,8 +189,11 @@
     </li>
     </ul>
     </article>
-    </section>
-    <section class="main-section" id="JavaScript_and_Java">
+    </section> -->
+
+
+
+    <!-- <section class="main-section" id="JavaScript_and_Java">
     <h1>JavaScript and Java</h1>
     <article>
     <p>
@@ -190,41 +218,56 @@
     consectetur adipisicing elit. Inventore harum repellendus quod nam consequuntur facilis impedit voluptate vitae! Ut placeat incidunt illum? Officia, eos! Iure, recusandae. Perferendis dolorem vitae qui? 
     </p>
     </article>
-    </section>
+    </section> -->
+
+
+
     <section class="main-section" id="Hello_world">
     <header>Hello world</header>
     <article>
-    To get started with writing JavaScript, open the Scratchpad and write your
-    first "Hello world" JavaScript code:
-    <code>function greetMe(yourName) { alert("Hello " + yourName); }
-    greetMe("World");
+    To get started with writing C++, open the visual studeo code or any kind of IDE of your choice and write your
+    first "Hello world" c++ code:
+    <code>#incude< iostream.h > <br>int main() <br> { <br> cout<<"Hello World"; <br> return 0 <br> }
     </code>
-    Select the code in the pad and hit Ctrl+R to watch it unfold in your
-    browser!
+    Save the program with .cpp extension 
+    Open the terminal by using the following shortcut
+    <code>ctrl + shift  + `</code>
+    To run the code, use the following bash command 
+    <code> g++ -std=c++11 your_file.cpp -o your_program </code>
     </article>
     </section>
     <section class="main-section" id="Variables">
     <header>Variables</header>
     <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur obcaecati quas alias deserunt 
-    eligendi dolorum provident iste assumenda sit rerum? Quos adipisci itaque eligendi quae. Quibusdam explicabo aut sapiente eos.
+      A variable is a container or portion of memory for storing and retrieving data value. A variable in c++ is a memory address. It is a digital container to hold a value.
+       This value may be integer number, floating-point number,  character,  string, or boolean.
     </p>
     <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae earum perferendis placeat
-     laudantium consequuntur molestias iusto ipsa numquam, tempora iure asperiores voluptatibus, repudiandae, ut excepturi magni consectetur officia culpa.
+    <strong>Datatype: </strong>determine the type of data will be stored in a avriable. 
+    <dl>
+      <dt>Types of datatypes</dt>
+      <dd>Int -  for integer</dd>
+      <dd>Char - for character</dd>
+      <dd>Float - for decimal numbers</dd>
+      <dd>Double- for floating-point number</dd>
+      <dd>Bool - for boolean (true/false)</dd>
+    </dl>
     </p>
     <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque vero 
-    mollitia ipsam minima laudantium, possimus quis dolore maiores cumque similique 
-    laborum nulla? Aperiam porro ipsum, facere tempora illo harum.
+    <strong>Identifier: </strong>is the name of a variable. It is a sequence of one or more letters, digits, and underscore characters.
+     An identifier can not start with numbers and it can not be keywords. 
     </p>
+    <p>
+      <strong>Keyword: </strong> are special words that are assigned for certain tasks. They can be declared as variables.  
+    </p>
+      
     </section>
     <section class="main-section" id="Declaring_variables">
     <header>Declaring variables</header>
     <article>
-    You can declare a variable in three ways:
+    You can declare a variable in two ways:
     <p>
-    With the keyword var. For example, <code>var x = 42.</code> This syntax
+    With the keyword . For example, <code>var x = 42.</code> This syntax
     can be used to declare both local and global variables.
     </p>
     <p>
