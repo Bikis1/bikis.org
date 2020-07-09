@@ -10,7 +10,7 @@
 
 <body >
     <nav id="navbar">
-    <h1>C++ Sample</h1>
+    <h1>C++</h1>
     <ul>
     <li><a class="nav-link" href="#Introduction">Introduction</a></li>
     <li>
@@ -467,75 +467,115 @@
   <li>Increment: adding 1 to a variable.</li>
   <li>Decrement: subtract 1 from a variable.</li>
   <li>Only works on integer variable</li>
+  <p><strong>Prefix Increment/Decrement</strong></p>
+  <ul>
+    <li>Increment or decrement the variable before it is used by other operation.</li>
+    <p><strong>Example</strong></p>
+    <code> int a = 7, c =8; <br> int b = ++a; //b =8 and a =8 <br> int d = --c; //d = 7 and c = 7 </code>
+  </ul>
+  <p><strong>Postfix Increment/Decrement</strong></p>
+  <ul>
+    <li>Increment or decrement the variable after it is used by other operation.</li>
+    <p><strong>Example</strong></p>
+    <code> int a = 7, c =8; <br> int b = a++; //b =7 and a =8 <br> int d = c--; //d = 8 and c = 7 </code>
+  </ul>
+  <p><strong>Note: </strong>If we use the variable separatly both postfix and prefix increment and decrement are the same</p>
+  <p><strong>Example 1</strong></p>
+    <code> int a = 7, c =8, d; <br> a++; a =8 <br> c--; //c = 7; d = a + c; // d is 15  </code>
+  <p><strong>Example 1</strong></p>
+  <code> int a = 10, b =5, c; <br> c = a % b++; //c = 0<br> c = a % ++b; //c = 4 <br> c  = ++ a - b--; //c =6 </code>
+  </ul>
 </ul>
 
-<p><strong>Example</strong></p>
-<code>8 % 6 * 3 + 4 - 7 <br> 8 % 6 = 2 (reminder) <br> 2 * 3 = 6 <br> 4 - 7 = -3 <br> 6  + (-3) = 3</code>
-
-
-
+    <div>
+      <p><strong>Library functions</strong></p>
+      <ul class ="div-indent">
+        <li>iostream.h: input and output </li>
+        <li>math.h: mathematics</li>
+        <li>string.h: used to include line of words</li>
+        <li>time.h: used to display time and date</li>
+      </ul>
+    </div>
+    <p><strong>Precedence of different operations</strong></p>
+    <div>
+      <p><strong>Example</strong></p>
+      <ul class ="div-indent">
+        <code>#incude < iostream.h > <br> int main() <br>{<br>int a = 5, b = 3, c = 1, d = 8 , e = 7, f =10, g =5, s, m;<br>s = a + b%(c+d)/e%b;<br>cout << "s: "<< s; <br> m = b*e + f%(g-d)%d; <br> cout<< m; <br> return 0;  <br>} </code>
+    </div>
+    <p><strong>Tempreture change from fahrenheit to celsius</strong></p>
     <p>Six data types that are primitives:</p>
-    <ul>
-    <li>Boolean. true and false.</li>
-    <li>
-    null. A special keyword denoting a null value. Because JavaScript
-    is case-sensitive, null is not the same as Null, NULL, or any
-    other variant.
-    </li>
-    <li>undefined. A top-level property whose value is undefined.</li>
-    <li>Number. 42 or 3.14159.</li>
-    <li>String. "Howdy"</li>
-    <li>
-    Symbol (new in ECMAScript 2015). A data type whose instances are
-    unique and immutable.
-    </li>
-    </ul>
-    </li>
-    <li>and Object</li>
-    </ul>
-    Although these data types are a relatively small amount, they enable you
-    to perform useful functions with your applications. Objects and functions
-    are the other fundamental elements in the language. You can think of
-    objects as named containers for values, and functions as procedures that
-    your application can perform.
+    <div> 
+      <code>#incude < iostream.h > <br> void main() <br>{<br>float c, f;<br>Enter a fahrenheit tempreture";<br>cin>>f; <br> c  = (5.0/9)*(f-32); <br> cout<< "celsius" << c; <br> } </code>
+    </div>
     </article>
     </section>
-    <section class="main-section" id="if...else_statement">
-    <header>if...else statement</header>
+
+
+    <section class="main-section" id="Conditional-Structure">
+    <header>Conditional Structure</header>
     <article>
-    Use the if statement to execute a statement if a logical condition is
-    true. Use the optional else clause to execute a statement if the condition
-    is false. An if statement looks as follows:
-    <code>if (condition) { statement_1; } else { statement_2; }</code>
-    condition can be any expression that evaluates to true or false. See
-    Boolean for an explanation of what evaluates to true and false. If
-    condition evaluates to true, statement_1 is executed; otherwise,
-    statement_2 is executed. statement_1 and statement_2 can be any statement,
-    including further nested if statements.
-    <p>
-    You may also compound the statements using else if to have multiple
-    conditions tested in sequence, as follows:
-    </p>
-    <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
-    } else if (condition_n) { statement_n; } else { statement_last; }
-    </code>
-    In the case of multiple conditions only the first logical condition which
-    evaluates to true will be executed. To execute multiple statements, group
-    them within a block statement ({ ... }) . In general, it's good practice
-    to always use block statements, especially when nesting if statements:
-    <code>if (condition) { statement_1_runs_if_condition_is_true;
-    statement_2_runs_if_condition_is_true; } else {
-    statement_3_runs_if_condition_is_false;
-    statement_4_runs_if_condition_is_false; }</code>
-    It is advisable to not use simple assignments in a conditional expression,
-    because the assignment can be confused with equality when glancing over
-    the code. For example, do not use the following code:
-    <code>if (x = y) { /* statements here */ }</code> If you need to use an
-    assignment in a conditional expression, a common practice is to put
-    additional parentheses around the assignment. For example:
-    <code>if ((x = y)) { /* statements here */ }</code>
+      <strong>Benefits:</strong>
+      <ul>
+        <li>Provide option</li>
+        <li>Make flexible</li>
+        <li>Make branch</li>
+        <li>Form loop</li>
+      </ul>
+
+    <strong>Grouped in to four</strong>
+    <ol>
+      <li>Conditional Statment: if, if--else, nested--if</li>
+      <li>Looping and iterative statement: for loop, while, do-while loop</li>
+      <li>Control or Jumping Statment: goto, continue, break, exit</li>
+      <li>Selective and Branching statment: switch</li>
+    </ol>
+
+    <p><strong>1. Conditional Statment</strong></p>
+    <ul>
+      <li>Make decision</li>
+      <li> A block of code will be executed if the condition is true</li>
+      <li> <strong>If</strong>- one way decision making.</li>
+      <code>if(condition) <br>{ <br>statement block <br>}</code>
+      <li><strong>If-else - </strong>Two way decision making</li>
+      <code>if(condition) <br>{ <br>true statement block <br>} <br> else <br>{ <br> false statment block <br> } </code>
+      <li><strong>Nested--if  - </strong>multiple decision making</li>
+      <code>if(condition) <br>{ <br>statment 1 <br>} <br> else if<br>{ <br> statment 2 <br> } <br> else <br>{ <br> statment 3 <br> }  </code>
+      <li><strong>Example: </strong></li>
+      <code>if(x>0) <br>{ <br>cout<< "x is positive" << endl; <br>} <br> else if(x < 0)<br>{ <br> cout<< "x is negative" << endl; <br> } <br> else <br>{ <br> cout<< "x is zero" << endl; <br> }  </code>
+    </ul>
+    <p><strong>2. Switch</strong></p>
+    <ul>
+      <li>Menu, choice, branch</li>
+      <li>Selective Structure</li>
+      <li>Used for decision making when more than one case involved.</li>
+      <li> <strong>Syntax:</strong>  </li>
+      <code> switch(expression) <br>{<br>case label1: <br> statment 1; <br> break; <br> case label2: <br> statment 2; <br> break;<br> defaut: <br> statment 3; <br> }</code>
+      <li><strong>Example: </strong></li>
+      <code> switch(x) <br>{<br>case 1: <br> cout<<"x is 1"; <br> break; <br> case 2: <br> cout<<"x is 2"; <br> break;<br> defaut: <br> cout<<"x is neither 1 or 2";; <br> }</code>
+    </ul>
+    <p><strong>3. The Repititive or Looping Structure</strong></p>
+    <ul>
+      <li>Uses for executing a block of code as long as a condition is true.</li>
+      <li><strong>While-loop: </strong>check the condition at the begining.</li>
+      <li>Syntax:</li>
+      <code>while(condition) <br>{<br> statment; <br>}</code>
+      <li><strong>Example: Countdown</strong></li>
+      <code>#include < iostream.h > <br> void main() <br>{ <br> int n; <br> cout<<"Enter the number"<< endl; <br> cin>>n; <br> while(n>0) <br>{<br>cout<< n << ", " <br>} </code>
+      <li><strong>Do - while loop: </strong>It checks a condition after executing a block of code at least once.</li>
+      <li>Syntax:</li>
+      <code>do <br>{<br> statment <br>} <br> while(condtion);</code>
+      <li><strong>Example: Prints from 0 to 9</strong></li>
+      <code> #include < iostream.h > <br> void main() <br> { <br> int i = 0;  <br> do <br>{<br> cout<<i<<"\n" <br>} <br> i++; <br> while(i<10);<br>} </code>
+      <li><strong>For Loop </strong>The same as while loop</li>
+      <li>Syntax: </li>
+      <code> for(initialization; condition; increase) <br>{ <br> statment <br> }</code>
+      <li><strong>Example:</strong></li>
+      <code>#include < iostream.h > <br> void main() <br>{ <br> int n; <br> for ( n=0; n < 5; n++) <br> { <br> cout << n<< endl; <br> } <br>} </code>
+    </ul>
     </article>
     </section>
+
+
     <section class="main-section" id="while_statement">
     <header>while statement</header>
     <article>
