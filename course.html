@@ -572,84 +572,45 @@
       <li><strong>Example:</strong></li>
       <code>#include < iostream.h > <br> void main() <br>{ <br> int n; <br> for ( n=0; n < 5; n++) <br> { <br> cout << n<< endl; <br> } <br>} </code>
     </ul>
-    </article>
-    </section>
-
-
-    <section class="main-section" id="while_statement">
-    <header>while statement</header>
-    <article>
-    A while statement executes its statements as long as a specified condition
-    evaluates to true. A while statement looks as follows:
-    <code>while (condition) statement</code> If the condition becomes false,
-    statement within the loop stops executing and control passes to the
-    statement following the loop.
-    <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
-    harum. Animi modi consequatur unde autem odio ut inventore explicabo 
-    cupiditate quo, ad nobis atque doloribus deserunt aspernatur, ratione rem ullam.
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, perspiciatis unde 
-    quod ut nisi minus. Culpa distinctio nisi exercitationem quia odit voluptas obcaecati 
-    0ducimus explicabo error quis porro, accusantium labore!
-    </p>
-    <p>
-    To execute multiple statements, use a block statement ({ ... }) to group
-    those statements.
-    </p>
-    Example:
-    <p>The following while loop iterates as long as n is less than three:</p>
-    <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
-    <p>
-    With each iteration, the loop increments n and adds that value to x.
-    Therefore, x and n take on the following values:
-    </p>
+    <p><strong>4. The Break Statment</strong></p>
     <ul>
-    <li>After the first pass: n = 1 and x = 1</li>
-    <li>After the second pass: n = 2 and x = 3</li>
-    <li>After the third pass: n = 3 and x = 6</li>
+      <li>Used to end a loop.</li>
+      <li><strong>Example: </strong></li>
+      <code>#include < iostream.h > <br>void main() <br>{ <br>int n; <br>for ( n=10; n >0; n--) <br>{ <br>cout << n<< endl; <br>if(n==4) <br>{ <br>cout<< "loop aborted"; <br> break; <br>}  <br>}<br>} </code>
     </ul>
-    <p>
-    After completing the third pass, the condition n &lt; 3 is no longer
-    true, so the loop terminates.
-    </p>
-    </article>
-    </section>
-    <section class="main-section" id="Function_declarations">
-    <header>Function declarations</header>
-    <article>
-    A function definition (also called a function declaration, or function
-    statement) consists of the function keyword, followed by:
+    <p><strong>5. The Continue Statment</strong></p>
     <ul>
-    <li>The name of the function.</li>
-    <li>
-    A list of arguments to the function, enclosed in parentheses and
-    separated by commas.
-    </li>
-    <li>
-    The JavaScript statements that define the function, enclosed in curly
-    brackets, { }.
-    </li>
+      <li>Jumping statment that will skip one iteration.</li>
+      <code>#include < iostream.h > <br>void main() <br>{ <br>int n; <br>for ( n=10; n >0; n--) <br>{ <br>cout << n<< endl; <br>if(n==4) <br>{ <br> continue; <br>}  <br>}<br>} </code>
     </ul>
-    <p>
-    For example, the following code defines a simple function named square:
-    </p>
-    <code>function square(number) { return number * number; }</code>
-    <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, 
-    quibusdam illum provident tempore exercitationem eaque sint laudantium 
-    perspiciatis ad saepe assumenda esse nihil atque maxime beatae? Libero error ad nisi.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis, asperiores 
-    cum fuga minima sequi placeat deserunt non culpa sapiente eligendi quasi, vel similique veritatis 
-    quam suscipit quod dolor recusandae!
-    </p>
-    <code>return number * number;</code>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero blanditiis consectetur 
-    magnam earum quibusdam, quidem dolor fuga unde dignissimos veritatis beatae, omnis consequuntur 
-    consequatur facere et. Quos dignissimos tenetur vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Quam doloribus blanditiis velit molestias culpa soluta vitae est a. Fugiat beatae vitae ad debitis placeat esse 
-    dolore officiis eum reprehenderit mollitia!
-    </p>
+    <p><strong>6. The Goto Statment</strong></p>
+    <ul>
+      <li>It allows the program to jump to another point in the program.</li>
+      <code>#inlcude < iostream.h > <br> void main() <br>{ <br> int n = 10; <br> loop: <br> cout<< n << " "; <br> n--; <br> if(n>0) <br> goto loop; <br> }  </code>
+  </article>
+  </section>
+  <section class="main-section" id="ArrayAndString">
+    <header>Array and String Manupulation</header>
+    <article>
+  <strong>Array: </strong> a group of items  with same data type.
+  A sequence of objects that are referenced by an index number.
+  <strong>Syntax</strong>
+  <div>
+    <code>Data type arry-name[size];</code>
+    <strong>Example</strong>
+    <code>int a[5];</code>
+  </div>
+  <p><strong>1. One Dimentional Array</strong></p>
+  <ul>
+    <li><strong>Example</strong></li>
+    <code>#include < iostream.h > <br>void main() <br>{ <br>const int  size = 10;  <br>double array[size]; <br>cout<<"Enter numbers" << endl; <br>for(int i=0; i< size; i++ ) <br>{ <br>cin >> array[i]; <br>} <br>for(int i=0; i< size; i++ ) <br>{ <br>cout<< array[i] << endl; <br>} <br>} </code>
+    </ul>
+
+    <p><strong>2. Two Dimentional Array</strong></p>
+    <ul>
+      <li><strong>Example</strong></li>
+      <code>#include < iostream.h > <br>void main() <br>{ <br>const int  size = 10;  <br>double array[size][size]; <br>cout<<"Enter numbers" << endl; <br>for(int i=0; i< size; i++ ) <br>{ <br>for(int j=0; j< size; j++) <br> {  <br>cin >> array[i][j]; <br>} <br>} <br>for(int i=0; i< size; i++ ) <br>{ <br>for(int j=0; j< size; j++ ) <br>{ <br>cout<< array[i][j] << endl; <br>} <br>} <br>}</code>
+      </ul>
     </article>
     </section>
     <section class="main-section" id="Reference">
