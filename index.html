@@ -1,55 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Bikis</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  <link rel="icon" href="LOGO1.png" type="image/png">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+    <title>Bikis</title>
 </head>
 
 <body>
-  <nav class="zone nav-color sticky">
-      <ul class="main-nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Courses</a></li>
-          <li><a href="">Books</a></li>
-          <li><a href="">Our Team</a></li>
-          <li class="push"><a href="">Contact</a></li>
-      </ul>
-  </nav>
 
-  <div class="container">
-  <img class="cover" src="./img/undraw.png">
-  </div>
-  
-  <div class="wrapper">
-  <button class="buton btn-danger btn-xl"> <a href="https://us10.list-manage.com/survey?u=de3ae7a451fb7f754bcb929a9&id=12c80a3ac3">Click Here to Take Survey</a>
-    </button>
-  
-  </div>
-  <hr>
-  <div class="zone blue grid-wrapper">
-    <div class="box zone"><img src="./img/files_2.png"> <h3>K-G <hr> ለልጆች</h3> </div>
-    <div class="box zone"><img src="./img/server_2_2.png"><h3>Elementary<hr> ፩ኛ ደረጃ</h3> </div>
-    <div class="box zone"><img src="./img/monitor_settings_2.png"> <h3>Secondary <hr>  ፪ኛ ደረጃ </h3></div>
-    <div class="box zone"><img src="./img/server_3.png"><h3>Bachelor's Degree <hr>የመጀመሪያ ዲግሪ</h3></div>
-    <div class="box zone" onclick="location.href='coursePython.html';" style="cursor: pointer;"><img src="./img/data_storage_2_2.png"> <a href="coursePython.html" target="_blank"><h3>Python <hr>ፓይተን</h3></a></div>
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I am Bikis Muhammed</h1>
 
-    <div class="box zone" onclick="location.href='course.html';" style="cursor: pointer;"> <img src="./img/monitor_coding_2.png"/> <a href="course.html" target="_blank"> <h3>C++ </h3> </a>
-    </div>
-    <div class="box zone" onclick="location.href='courseWebDev.html';" style="cursor: pointer;"><img src="./img/desktop_analytics_2.png"><a href="courseWebDev.html" target="_blank"><h3>Website Development</h3></a></div>
+            </div>
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
 
-    <div class="box zone"><img src="./img/server_safe_2.png"> <h3>....</h3></div>
-  </div>
+                    <ul id="navigation">
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
 
-  <footer class="zone">
+                <div class="left-column">
 
-    <img src="./img/LOGO1.png" alt=" ">
-    <p> የቅጂ መብት &copy;2020. ሁሉም መብቶች የተጠበቁለት፡፡</p>	
-  </footer>
+                    <img id="profile-pic" src="images/Photo.jpg" alt="img">
 
-</div>
+                    <h5 style="text-align: center; line-height: 0">STEM Scholar</h5>
+
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+
+                    <p id="settings-note">*Theme settings will be saved for <br> your next vist</p>
+                </div>
+                <div class="right-column">
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>What I Have done</h3>
+                            <p> As a Missiouri S&T STEM Scholar, I Have been working on configuring a distributed
+                                traffic prediction simulator with other
+                                STEM scholars.</p>
+                            <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+
+                    <h4>More about me </h4>
+
+                    <p>I have been working on a distributed traffic prediction simulator (Written in Go programming
+                        language) with other
+                        Missouri University of Science and Technology STEM scholars.</p>
+
+                    <p>I have been working on Django framework, and I have developed two dynamic websites. Some of the
+                        projects are online students Management system and onlie inventory system.
+                    </p>
+
+                    <hr>
+
+                    <h4>TOP EXPERTISE</h4>
+
+                    <P>Fullstack developer with primary focus on <strong> Django </strong> + React <a target="_blank"
+                            href="resume.pdf">
+                            Download Resume</a></P>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>SQL</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                        </ul>
+                        <ul>
+                            <li>Go</li>
+                            <li>Javascript</li>
+                            <li>AWS</li>
+                            <li>Heroku</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <img id="social-img" src="images/follow.png" alt="...">
+                    <h3>Find me on Twitter & Youtube </h3>
+                    <a target="_blank" href="#">Youtube: @----</a>
+                    <br>
+                    <a target="_blank" href="#"> Twitter: @Bikis</a>
+
+                    <h3>Contact Information </h3>
+                    <a target="_blank" href="#">Phone Number: (314)-609-Bikis </a>
+                    <br>
+                    <a target="_blank" href="#"> Email: bmpb8@mst.edu </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="s1">
+        <div class="main-container">
+            <h3 style="text-align: center;">Some of My Past Projects</h3>
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img src="images/project.png" alt="..." class="thumbnail">
+                        <div class="post-preview">
+                            <h6 class="post-title">Distributed Traffic Prediction Simulator (Go) </h6>
+                            <p class="post-intro"> My task in this project is to get this simulator in working state by
+                                configuring
+                                some of the deprecated dependancies.
+
+                            </p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img src="images/course.png" alt="..." class="thumbnail">
+                        <div class="post-preview">
+                            <h6 class="post-title">Django Student Management System (Django and Bootstrap)</h6>
+
+                            <p class="post-intro">Using this system, students can register and log in with their name
+                                and password.
+                                They can take a range of computer science courses. There is also a question and answer
+                                and quiz section.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img src="images/shopping.png" alt="..." class="thumbnail">
+                        <div class="post-preview">
+                            <h6 class="post-title">Django Online Inventory Management System</h6>
+                            <p class="post-intro">An admin can add different products and their specification through an
+                                admin page..
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get In Touch</h3>
+            <form action="" id="contact-form">
+                <label>Name</label>
+                <input type="text" class="input-field" name="name">
+
+                <label>Subject</label>
+                <input type="text" class="input-field" name="subject">
+
+                <label>Email</label>
+                <input type="text" class="input-field" name="email">
+
+                <label>Message</label>
+                <textarea name="message" class="input-field"></textarea>
+
+                <input type="submit" id="submit-button" value="Send">
+
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
