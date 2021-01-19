@@ -376,6 +376,44 @@ h6{font-size: 16px;}
     border: none;
 }
 
+#my-form-status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+#status.success {
+    background-color: rgba(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: red;
+    color: white;
+     animation: status 4s ease forwards;
+}
+
+/* Animations */
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;
